@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="iwc">Udacity</string>
+    <string name="email">support@udacity.com</string>
+    <string name="phone">650–555–5555</string>
+    <string name="address">2465 Latham St\nMountain View, CA 94043</string>
+    <string name="home">Udacity is an online learning platform offering groundbreaking credential
+        programs in fields such as artificial intelligence, machine learning, self-driving cars,
+        and robotics, as well as app and web development, digital marketing, and more. </string>
+</resources>

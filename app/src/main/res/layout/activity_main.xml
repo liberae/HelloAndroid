@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project1.MainActivity">
+
+    <ImageView
+        android:id="@+id/iwc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/iwc2" />
+
+
+    <LinearLayout
+        android:id="@+id/child1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/iwc"
+        android:layout_below="@+id/iwc"
+        android:background="#10000000"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="2"
+            android:background="#00000000"
+            android:onClick="selectFrag"
+            android:src="@mipmap/bcard" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:onClick="selectFrag"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:background="#00000000"
+            android:onClick="selectFrag"
+            android:src="@mipmap/bcard" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/your_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/child1"
+        android:background="#00000000"
+
+        />
+
+
+</RelativeLayout>
+
